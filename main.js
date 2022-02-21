@@ -23,14 +23,30 @@ function ztenci(){
 }
 
 function prikliknuti(){
-    odstavec.classList.toggle(".red");
+    odstavec.classList.toggle("red");
    }
 
-let pocitadlo= document.querySelector(".odstavec")
+let pocitadlo= document.querySelector("odstavec")
 function zvetsi(){
     pocitadlo++;
 }
 
+let audioFile = document.querySelector("#zvukovaStopa");
+function startAudio(){
+    audioFile.onplay()
+}
+
+function pauseAudio(){
+    audioFile.pause()
+}
+
+function zvukovaStopa(){
+    audioFile.volume=0; 0.5; 1;
+}
+
+function backStart(){
+    audioFile.currentTime=0.5;
+}
 
 /**  Úkol na lekci: Vytvoř odstavec s textem “V elipse spí lev.”, který bude mít nastaveno style="font-size: 16px;", 
  * a tlačítko s nápisem “červený po kliknutí”. Další požadavky na prvky stránky budou:

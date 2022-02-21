@@ -21,14 +21,24 @@
 
 	<p class="odstavec" onmouseover="ztucni()" onmouseout="ztenci()">V elipse spi lev</p>
 
-	<button onclick="priKliknuti()">	červený po kliknutí	</button>
+	<button onclick="priKliknuti()">zčervená</button>
 	
-	<button onclick="zvetsi()">větší po kliknutí </button>
+	<button onclick="zvetsi()">větší po kliknutí</button>
 
 
 	<button class="tlacitko">Čudlajs</button>
 
-	<audio src="audio/dingdingdang.mp3" preload="auto"></audio>
+	<audio id="zvukovaStopa" src="audio/dingdingdang.mp3" preload="auto"></audio>
+
+	<button onclick="startAudio()"> Start </button>
+	
+	<button onclick="pauseAudio()"> Pauza </button>
+
+	<button onclick="zvukovaStopa()"> Zvuk </button>
+
+	<button onclick="backStart()"> Vrácení na začátek </button>
+
+
 	<script type="text/javascript" src="main.js"></script>
 </body>
 </html>
