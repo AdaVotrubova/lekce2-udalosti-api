@@ -10,6 +10,12 @@ let ctverecek = document.querySelector("div.zluty");
 ctverecek.classList.add("ctverecek");
 */
 
+let pocitadlo= document.querySelector("odstavec");
+function zvetsi(){
+    console.log("pocitame test");
+    pocitadlo= pocitadlo +1;
+}
+
 let odstavec= document.querySelector("p")
 
 function ztucni(){
@@ -22,14 +28,9 @@ function ztenci(){
     odstavec.style.fontWeight="normal";
 }
 
-function prikliknuti(){
+function priKliknuti(){
     odstavec.classList.toggle("red");
-   }
-
-let pocitadlo= document.querySelector("odstavec")
-function zvetsi(){
-    pocitadlo++;
-}
+}    
 
 let audioFile = document.querySelector("#zvukovaStopa");
 function startAudio(){
@@ -40,8 +41,16 @@ function pauseAudio(){
     audioFile.pause()
 }
 
-function zvukovaStopa(){
-    audioFile.volume=0; 0.5; 1;
+function zvukovaStopa1(){
+    audioFile.volume=0;
+}
+
+function zvukovaStopa2(){
+    audioFile.volume=0.5;
+}
+
+function zvukovaStopa3(){
+    audioFile.volume=1;
 }
 
 function backStart(){
