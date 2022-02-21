@@ -33,7 +33,7 @@ function zvetsi(){
 
 let audioFile = document.querySelector("#zvukovaStopa");
 function startAudio(){
-    audioFile.onplay()
+    audioFile.play()
 }
 
 function pauseAudio(){
@@ -45,7 +45,7 @@ function zvukovaStopa(){
 }
 
 function backStart(){
-    audioFile.currentTime=0.5;
+    audioFile.currentTime=0;
 }
 
 /**  Úkol na lekci: Vytvoř odstavec s textem “V elipse spí lev.”, který bude mít nastaveno style="font-size: 16px;", 
