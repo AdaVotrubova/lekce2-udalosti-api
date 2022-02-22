@@ -10,10 +10,9 @@ let ctverecek = document.querySelector("div.zluty");
 ctverecek.classList.add("ctverecek");
 */
 
-let pocitadlo= document.querySelector("odstavec");
 function zvetsi(){
     console.log("pocitame test");
-    pocitadlo= pocitadlo +1;
+    odstavec.styl.fontSize= fontSize + 1;
 }
 
 let odstavec= document.querySelector("p")
